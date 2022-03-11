@@ -33,7 +33,7 @@ void MyTcpServer::slotServerRead(){
     while(mTcpSocket->bytesAvailable()>0)
     {
         QByteArray array =mTcpSocket->readAll();
-        mTcpSocket->write(array);
+        mTcpSocket->write(array.append('Y'));
     }
 }
 
