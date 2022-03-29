@@ -1,9 +1,9 @@
 #include <QCoreApplication>
-#include "mytcpserver.h"
+#include "LogiFirm_Server.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    MyTcpServer myserv;
+    LogiFirmServer LogiFirm_server;  // создание сервера
     return a.exec();
 }
