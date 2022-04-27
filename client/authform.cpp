@@ -1,5 +1,7 @@
 #include "authform.h"
 #include "ui_authform.h"
+#include "functionsforclient.h"
+#include "mainwindow.h"
 
 AuthForm::AuthForm(QWidget *parent) :
     QWidget(parent),
@@ -16,14 +18,36 @@ AuthForm::~AuthForm()
 
 void AuthForm::on_registration_clicked()
 {
+    ui->line_login->setText("");
+    ui->line_password->setText("");
+    ui->line_email->setText("");
     ui->line_email->setVisible(true);  // показываем поле email при нажатии кнопки регистрация
+    ui->enter->setText("Зарегистрироваться");  // переименование клавиши войти на зарегистрироваться
     ui->registration->setVisible(false);  // скрываем кнопку регистрации
 }
 
 
 void AuthForm::on_enter_clicked()
 {
-    emit logged_in();  // вызов сигнала входа в систему
-    hide();  // скрыть окно
+    QString log = ui->line_login->text();
+    QString pass = ui->line_password->text();
+    if (ui->line_email->isVisible()){
+        QString email = ui->line_email->text();
+        reg(log, pass, email);  // регистрация в программе
+        ui->line_email->setVisible(false);
+        ui->registration->setVisible(true);
+        ui->line_login->setText("");
+        ui->line_password->setText("");
+        ui->line_email->setText("");
+        ui->enter->setText("Войти");  // переименование клавиши зарегистрироваться на войти
+    }
+    else{
+        auth(log, pass);  // аутентификация в программе
+        QString user_name = "Текущий пользователь: " + log;
+        emit logged_in(user_name);  // вызов сигнала входа в систему
+        hide();  // скрыть окно
+        ui->line_login->setText("");
+        ui->line_password->setText("");
+    }
 }
 

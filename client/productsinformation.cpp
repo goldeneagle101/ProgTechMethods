@@ -12,3 +12,10 @@ productsinformation::~productsinformation()
 {
     delete ui;
 }
+
+void productsinformation::on_return_to_main_window_from_products_information_clicked()
+{
+    emit return_to_main_window();
+    hide();
+}
+

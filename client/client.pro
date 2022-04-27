@@ -10,18 +10,26 @@ CONFIG += c++11
 
 SOURCES += \
     authform.cpp \
+    functionsforclient.cpp \
+    info_about_orders.cpp \
     main.cpp \
     mainwindow.cpp \
+    prod_order.cpp \
     productsinformation.cpp
 
 HEADERS += \
     authform.h \
+    functionsforclient.h \
+    info_about_orders.h \
     mainwindow.h \
+    prod_order.h \
     productsinformation.h
 
 FORMS += \
     authform.ui \
+    info_about_orders.ui \
     mainwindow.ui \
+    prod_order.ui \
     productsinformation.ui
 
 # Default rules for deployment.
