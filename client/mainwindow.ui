@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>LogiFirm</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="firm_name">
@@ -48,14 +48,14 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>532</x>
       <y>490</y>
-      <width>93</width>
+      <width>201</width>
       <height>29</height>
      </rect>
     </property>
     <property name="text">
-     <string>Выход</string>
+     <string>Выход из программы</string>
     </property>
    </widget>
    <widget class="QPushButton" name="products_information">
@@ -101,6 +101,37 @@
     </property>
     <property name="text">
      <string>Заказ товара</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="switch_user">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>50</y>
+      <width>211</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выход из учетной записи</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="login">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>301</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

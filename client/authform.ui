@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>LogiFirm</string>
   </property>
   <widget class="QLineEdit" name="line_login">
    <property name="geometry">
@@ -24,7 +24,6 @@
    </property>
    <property name="font">
     <font>
-     <family>Times New Roman</family>
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -43,7 +42,6 @@
    </property>
    <property name="font">
     <font>
-     <family>Times New Roman</family>
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -62,7 +60,6 @@
    </property>
    <property name="font">
     <font>
-     <family>Times New Roman</family>
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -73,15 +70,14 @@
   <widget class="QPushButton" name="enter">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>120</x>
      <y>240</y>
-     <width>111</width>
+     <width>191</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Times New Roman</family>
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -94,13 +90,12 @@
     <rect>
      <x>330</x>
      <y>240</y>
-     <width>141</width>
+     <width>191</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Times New Roman</family>
      <pointsize>14</pointsize>
     </font>
    </property>

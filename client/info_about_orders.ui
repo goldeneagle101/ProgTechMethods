@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>productsinformation</class>
- <widget class="QWidget" name="productsinformation">
+ <class>info_about_orders</class>
+ <widget class="QWidget" name="info_about_orders">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>LogiFirm</string>
   </property>
-  <widget class="QTextEdit" name="text_info_about_products">
+  <widget class="QTextEdit" name="text_info_about_orders">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -46,7 +46,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Информация о товарах</string>
+       <string>Информация о заказах</string>
       </property>
      </widget>
     </item>
@@ -58,7 +58,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Сгенерировать актуалльную информацию о товарах</string>
+       <string>Сгенерировать актуалльную информацию о заказах</string>
       </property>
      </widget>
     </item>
@@ -67,9 +67,9 @@
   <widget class="QPushButton" name="return_to_main_window_from_products_information">
    <property name="geometry">
     <rect>
-     <x>532</x>
+     <x>542</x>
      <y>10</y>
-     <width>301</width>
+     <width>291</width>
      <height>41</height>
     </rect>
    </property>

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 
+
 namespace Ui {
 class AuthForm;
 }
@@ -21,8 +22,11 @@ private slots:
 
     void on_enter_clicked();
 
+    void on_logged_in(bool flag);
+
 signals:
-    void logged_in();
+    void logged_in(QString log);
+    void clear_all();  // для очистки всех форм прошлого пользователя
 
 private:
     Ui::AuthForm *ui;
