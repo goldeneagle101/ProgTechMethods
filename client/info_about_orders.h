@@ -21,6 +21,8 @@ signals:
 
 private slots:
     void on_return_to_main_window_from_products_information_clicked();
+    void print_answer(QString answer);
+    void on_generate_up_to_date_information_clicked();
 
 private:
     Ui::info_about_orders *ui;

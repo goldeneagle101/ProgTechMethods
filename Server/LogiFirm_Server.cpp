@@ -31,6 +31,7 @@ void LogiFirmServer::slotClientConnected(){
         connect(Socket, &QTcpSocket::readyRead,this,&LogiFirmServer::slotServerRead);  // создание режима чтения
         connect(Socket,&QTcpSocket::disconnected,this,&LogiFirmServer::slotClientDisconnected);  // создание режима отключения
 
+        // вывод текста-приветствия
         Socket->write("Hello, user!!! You have opened the LogiFirm server!\r\nPlease, write you command >>> ");
 
         multiple_sockets.push_back(Socket);
@@ -43,11 +44,12 @@ void LogiFirmServer::slotClientConnected(){
 void LogiFirmServer::slotServerRead(){
     result_Server_Read = "";  // обнуление переменной в которую записывается результат считывания
     Socket = (QTcpSocket*)sender();  // работа с последним активным сокетом
+    long long id_descriptor = Socket->socketDescriptor();
     while(Socket->bytesAvailable()>0)
     {
         read_array = Socket->readAll();  // считывание
         result_Server_Read.append(read_array);  // занесение в данных результирующий массив
-        Socket->write(parsing(result_Server_Read.toUtf8()));  // обработка считанных данных с предварительной конвертацией в Utf8
+        Socket->write(parsing(result_Server_Read.toUtf8(), id_descriptor));  // обработка считанных данных с предварительной конвертацией в Utf8
     }
 
 }
@@ -55,6 +57,7 @@ void LogiFirmServer::slotServerRead(){
 // отключение пользователя
 void LogiFirmServer::slotClientDisconnected(){
     Socket = (QTcpSocket*)sender();  // работа с последним активным сокетом
+    //qDebug() << Socket->socketDescriptor();
     Socket->close();  // закрытие сокета
     qDebug() << "new client disconnected";  // вывод отчета об успешном отключении
 }

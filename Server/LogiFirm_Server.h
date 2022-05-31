@@ -9,6 +9,14 @@
 #include <QByteArray>
 #include <QDebug>
 
+/// \authors Tatarchuk_Mihail, Serdykova_Polina, Dmitry_Dvorkin, Saymanova_Alena
+/// \date 28.03.2022
+/// \version 1.1.0
+/// \class LogiFirmServer класс отвечающий за работу сервера фирмы LogiFirm
+/// \brief slotClientConnected метод, отвечающий за обработку подключения нового пользователя
+/// \brief slotSlientDisconnected метод, отвечающий за обработку отключения нового пользователя
+/// \brief slotServerRead метод отвечающий за чтение команд из консоли
+
 class LogiFirmServer : public QObject
 {
     Q_OBJECT

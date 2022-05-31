@@ -2,6 +2,8 @@ QT -= gui
 
 QT += network #Для работы с сетью
 
+QT += sql #Для работы с бд
+
 
 CONFIG += c++11 console
 CONFIG -= app_bundle
@@ -29,4 +31,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     LogiFirm_Server.h \
-    Server_Functions.h
+    Server_Functions.h \
+    database.h

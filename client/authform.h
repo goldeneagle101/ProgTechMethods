@@ -22,6 +22,8 @@ private slots:
 
     void on_enter_clicked();
 
+    void on_logged_in(bool flag);
+
 signals:
     void logged_in(QString log);
 

@@ -22,6 +22,11 @@
      <height>491</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -62,9 +67,9 @@
   <widget class="QPushButton" name="return_to_main_window_from_products_information">
    <property name="geometry">
     <rect>
-     <x>552</x>
+     <x>532</x>
      <y>10</y>
-     <width>281</width>
+     <width>301</width>
      <height>41</height>
     </rect>
    </property>
