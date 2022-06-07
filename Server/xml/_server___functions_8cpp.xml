@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="_server___functions_8cpp" kind="file" language="C++">
+    <compoundname>Server_Functions.cpp</compoundname>
+    <includes refid="_server___functions_8h" local="yes">Server_Functions.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Server_Functions.cpp</label>
+        <link refid="_server___functions_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server_Functions.h</label>
+        <link refid="_server___functions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QString</label>
+      </node>
+      <node id="3">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_server___functions_8cpp_1a44ce31d04ead3bbb2518a69d33c7b93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray parsing</definition>
+        <argsstring>(QString main_data_from_client)</argsstring>
+        <name>parsing</name>
+        <param>
+          <type>QString</type>
+          <declname>main_data_from_client</declname>
+        </param>
+        <briefdescription>
+<para>parsing функция для реализации парсинга запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="authors"><para>Tatarchuk_Mihail </para>
+</simplesect>
+<simplesect kind="date"><para>28.03.2022 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0</para>
+</simplesect>
+auth функция для авторизации</para>
+<para>reg функция для регистрации</para>
+<para>example просто функция (для проверки работоспособности) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">main_data_from_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строка введенная клиентом </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>логин пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>пароль пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e-mail пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mobilephonenumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>номер телефона пользователя </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.cpp" line="4" column="12" bodyfile="Server_Functions.cpp" bodystart="4" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8cpp_1a8a240dbb1effe803a8c7b95afbede15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray auth</definition>
+        <argsstring>(QString log, QString pass)</argsstring>
+        <name>auth</name>
+        <param>
+          <type>QString</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.cpp" line="43" column="12" bodyfile="Server_Functions.cpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8cpp_1a17f8c8044a3c1d0ffff34a06cfe3b5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray reg</definition>
+        <argsstring>(QString log, QString pass, QString email, QString mobilephonenumber)</argsstring>
+        <name>reg</name>
+        <param>
+          <type>QString</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>mobilephonenumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.cpp" line="50" column="12" bodyfile="Server_Functions.cpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8cpp_1ab76f4b153720f7efe7cf354c5fcf4afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray example</definition>
+        <argsstring>(QString first_param)</argsstring>
+        <name>example</name>
+        <param>
+          <type>QString</type>
+          <declname>first_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.cpp" line="59" column="12" bodyfile="Server_Functions.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Server_Functions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>парсинг<sp/>данных,<sp/>введенных<sp/>пользователем</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">QByteArray<sp/>parsing(QString<sp/>main_data_from_client){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>parsing_data_from_user;<sp/></highlight><highlight class="comment">//<sp/>контейнер,<sp/>представляющий<sp/>собой<sp/>двухсвязный<sp/>список,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>для<sp/>обработки<sp/>запроса<sp/>пользователя</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>function_name;<sp/><sp/></highlight><highlight class="comment">//<sp/>имя<sp/>функции,<sp/>полученное<sp/>в<sp/>результате<sp/>parsing()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number_of_parameters;<sp/><sp/></highlight><highlight class="comment">//<sp/>количество<sp/>параметров<sp/>(необходимо<sp/>для<sp/>предотвращения<sp/>ошибки<sp/>нехватки<sp/>параметров)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_data_from_user<sp/>=<sp/>main_data_from_client.split(QLatin1Char(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">));<sp/><sp/></highlight><highlight class="comment">//<sp/>разделение<sp/>введенных<sp/>данных<sp/>по<sp/>спец<sp/>символу</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>function_name<sp/>=<sp/>parsing_data_from_user.front();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_data_from_user.pop_front();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>number_of_parameters<sp/>=<sp/>parsing_data_from_user.size();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(function_name==</highlight><highlight class="stringliteral">&quot;auth&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(number_of_parameters<sp/>==<sp/>2){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>auth(parsing_data_from_user.at(0),<sp/>parsing_data_from_user.at(1));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;error<sp/>(incorrect<sp/>number<sp/>of<sp/>parameters<sp/>during<sp/>authorization).\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(function_name==</highlight><highlight class="stringliteral">&quot;reg&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(number_of_parameters<sp/>==<sp/>4){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reg(parsing_data_from_user.at(0),<sp/>parsing_data_from_user.at(1),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parsing_data_from_user.at(2),<sp/>parsing_data_from_user.at(3));;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;error<sp/>(incorrect<sp/>number<sp/>of<sp/>parameters<sp/>during<sp/>registration).\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(function_name==</highlight><highlight class="stringliteral">&quot;example&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(number_of_parameters<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>example(parsing_data_from_user.at(0));;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;error<sp/>(incorrect<sp/>number<sp/>of<sp/>parameters<sp/>during<sp/>running<sp/>example()).\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;error\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>функция<sp/>авторизации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">QByteArray<sp/>auth(QString<sp/>log,<sp/>QString<sp/>pass){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>log<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>pass<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;auth\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>функция<sp/>регистрации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">QByteArray<sp/>reg(QString<sp/>log,<sp/>QString<sp/>pass,<sp/>QString<sp/>email,<sp/>QString<sp/>mobilephonenumber){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>log<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>pass<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>mobilephonenumber<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;reg\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>дополнительная<sp/>функция</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">QByteArray<sp/>example(QString<sp/>first_param){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>first_param<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>обнуление,<sp/>чтобы<sp/>не<sp/>было<sp/>предупреждения.<sp/>В<sp/>дальнейшем<sp/>необходимо<sp/>удалить</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;example\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Server_Functions.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="class_singleton" kind="class" language="C++" prot="public">
+    <compoundname>Singleton</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_singleton_1adb583ddadc0f4fdff383adeb44fce23c" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> *</type>
+        <definition>Singleton* Singleton::p_instance</definition>
+        <argsstring></argsstring>
+        <name>p_instance</name>
+        <qualifiedname>Singleton::p_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="5" column="19" bodyfile="Singleton.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Singleton::Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>Singleton</name>
+        <qualifiedname>Singleton::Singleton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="7" column="1" bodyfile="Singleton.h" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_1a2d5e43782d65593bf316ff9a5cd58de4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Singleton::Singleton</definition>
+        <argsstring>(const Singleton &amp;)</argsstring>
+        <name>Singleton</name>
+        <qualifiedname>Singleton::Singleton</qualifiedname>
+        <param>
+          <type>const <ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_1a201725b3b777ce535eeb97f1523f8115" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        <definition>Singleton &amp; Singleton::operator=</definition>
+        <argsstring>(Singleton &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Singleton::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="9" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_singleton_1aa53fd6700bb7e168772a149715ac2971" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> *</type>
+        <definition>delete Singleton::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>Singleton::getInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="11" column="18" bodyfile="Singleton.h" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Singleton.h" line="2" column="1" bodyfile="Singleton.h" bodystart="3" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_singleton_1aa53fd6700bb7e168772a149715ac2971" prot="public" virt="non-virtual"><scope>Singleton</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1a201725b3b777ce535eeb97f1523f8115" prot="private" virt="non-virtual"><scope>Singleton</scope><name>operator=</name></member>
+      <member refid="class_singleton_1adb583ddadc0f4fdff383adeb44fce23c" prot="private" virt="non-virtual"><scope>Singleton</scope><name>p_instance</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="private" virt="non-virtual"><scope>Singleton</scope><name>Singleton</name></member>
+      <member refid="class_singleton_1a2d5e43782d65593bf316ff9a5cd58de4" prot="private" virt="non-virtual"><scope>Singleton</scope><name>Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

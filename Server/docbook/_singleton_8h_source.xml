@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__singleton_8h_source" xml:lang="ru">
+<title>Singleton.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="comment">//классическая&#32;реализация</emphasis>
+2 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_singleton">Singleton</link>
+3 {
+4 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>&#32;*&#32;p_instance;
+6 
+7 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>(){}
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>&amp;&#32;);
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>&amp;&#32;operator&#32;=&#32;(<link linkend="_class_singleton">Singleton</link>&#32;&amp;);
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>*&#32;getInstance(){
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!p_instance)
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p_instance&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>();
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p_instance;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+16 }
+17 
+18 
+19 Singleton::getInstance();
+20 
+21 <emphasis role="keyword">delete</emphasis>&#32;Singleton::getInstance();&#32;<emphasis role="comment">//удаление6&#32;памяти&#32;на&#32;том,&#32;кто&#32;использует&#32;класс,&#32;а&#32;не&#32;автоматически&#32;в&#32;классе!!!!</emphasis>
+22 
+23 <emphasis role="comment">//Улучшенная&#32;реализация</emphasis>
+24 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_singleton">Singleton</link>;
+25 
+26 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_singleton_destroyer">SingletonDestroyer</link>
+27 {
+28 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>&#32;*&#32;p_instance;
+30 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton_destroyer">~SingletonDestroyer</link>()&#32;{&#32;<emphasis role="keyword">delete</emphasis>&#32;p_instance;}
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;initialize(<link linkend="_class_singleton">Singleton</link>&#32;*&#32;p){p_instance&#32;=&#32;p};
+33 }
+34 
+35 
+36 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_singleton">Singleton</link>
+37 {
+38 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>&#32;*&#32;p_instance;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_singleton_destroyer">SingletonDestroyer</link>&#32;destroyer;
+41 &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>(){}
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>&amp;&#32;);
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">Singleton</link>&amp;&#32;operator&#32;=&#32;(<link linkend="_class_singleton">Singleton</link>&#32;&amp;);
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_singleton">~Singleton</link>()&#32;{}
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_singleton_destroyer">SingletonDestroyer</link>;
+47 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>*&#32;getInstance(){
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!p_instance)
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p_instance&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_singleton">Singleton</link>();
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;destroyer.initialize(p_instance);
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p_instance;
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+56 }
+</programlisting></section>

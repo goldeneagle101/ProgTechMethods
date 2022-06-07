@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_logi_firm_server" xml:lang="ru">
+<title>Класс LogiFirmServer</title>
+<indexterm><primary>LogiFirmServer</primary></indexterm>
+<para>
+
+<para>slotClientConnected метод, отвечающий за обработку подключения нового пользователя </para>
+ 
+</para>
+<para>Граф наследования:LogiFirmServer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_logi_firm_server.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые слоты    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_logi_firm_server_1ab8cf7dc9fc0bc660cae46aa18fe22dd2"/>void <emphasis role="strong">slotClientConnected</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_logi_firm_server_1a0c4f1d6166a9a156015d671f477d2e7a"/>void <emphasis role="strong">slotClientDisconnected</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_logi_firm_server_1abde75e91b502f4dce5ff3c810301c6d2"/>void <emphasis role="strong">slotServerRead</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_logi_firm_server_1a4e23b8bde0dcead7c5a4a10d4c04b5a5"/><emphasis role="strong">LogiFirmServer</emphasis> (QObject *parent=nullptr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>slotClientConnected метод, отвечающий за обработку подключения нового пользователя </para>
+
+
+
+<para><formalpara><title>Авторы</title>
+
+<para>Tatarchuk_Mihail </para>
+</formalpara>
+<formalpara><title>Дата</title>
+
+<para>28.03.2022 </para>
+</formalpara>
+<formalpara><title>Версия</title>
+
+<para>1.0.0 за работу сервера фирмы LogiFirm</para>
+</formalpara>
+slotSlientDisconnected метод, отвечающий за обработку отключения нового пользователя</para>
+
+<para>slotServerRead метод отвечающий за чтение команд из консоли </para>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+LogiFirm_Server.hLogiFirm_Server.cpp</section>
+</section>

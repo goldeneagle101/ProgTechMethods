@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__server___functions_8h_source" xml:lang="ru">
+<title>Server_Functions.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;SERVER_FUNCTIONS_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;SERVER_FUNCTIONS_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;QStringList&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;QString&gt;</emphasis>
+5 
+18 
+19 
+20 <emphasis role="comment">//&#32;???????????&#32;почему&#32;не&#32;работает?</emphasis>
+21 <emphasis role="comment">//QStringList&#32;parsing_data_from_user;&#32;&#32;//&#32;контейнер,&#32;представляющий&#32;собой&#32;двухсвязный&#32;список,</emphasis>
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;для&#32;обработки&#32;запроса&#32;пользователя</emphasis>
+23 <emphasis role="comment">//QString&#32;function_name;&#32;&#32;//&#32;имя&#32;функции,&#32;полученное&#32;в&#32;результате&#32;parsing()</emphasis>
+24 <emphasis role="comment">//&#32;?????????????</emphasis>
+25 
+26 <emphasis role="comment">//&#32;функция&#32;обработки&#32;запроса&#32;сервером</emphasis>
+27 QByteArray&#32;parsing(QString&#32;main_data_from_client);&#32;&#32;<emphasis role="comment">//&#32;парсинг&#32;данных,&#32;введенных&#32;пользователем</emphasis>
+28 
+29 <emphasis role="comment">//&#32;функции&#32;сервера</emphasis>
+30 QByteArray&#32;auth(QString&#32;log,&#32;QString&#32;pass);&#32;&#32;<emphasis role="comment">//&#32;функция&#32;авторизации</emphasis>
+31 QByteArray&#32;reg(QString&#32;log,&#32;QString&#32;pass,&#32;QString&#32;email,&#32;QString&#32;mobilephonenumber);&#32;&#32;<emphasis role="comment">//&#32;функция&#32;регистрации</emphasis>
+32 QByteArray&#32;example(QString&#32;first_param);&#32;&#32;<emphasis role="comment">//&#32;дополнительная&#32;функция</emphasis>
+33 
+34 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;SERVER_FUNCTIONS_H</emphasis>
+</programlisting></section>
