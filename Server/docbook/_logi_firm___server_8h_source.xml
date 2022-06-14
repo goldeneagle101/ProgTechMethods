@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__logi_firm___server_8h_source" xml:lang="ru">
+<title>LogiFirm_Server.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;LOGIFIRM_SERVER_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;LOGIFIRM_SERVER_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;QObject&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;QTcpServer&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;QTcpSocket&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;QVector&gt;</emphasis>
+7 
+8 <emphasis role="preprocessor">#include&#32;&lt;QtNetwork&gt;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&lt;QByteArray&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;QDebug&gt;</emphasis>
+11 
+19 
+20 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_logi_firm_server">LogiFirmServer</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;QObject
+21 {
+22 &#32;&#32;&#32;&#32;Q_OBJECT
+23 <emphasis role="keyword">public</emphasis>:
+24 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_logi_firm_server">LogiFirmServer</link>(QObject&#32;*parent&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>);
+25 &#32;&#32;&#32;&#32;<link linkend="_class_logi_firm_server">~LogiFirmServer</link>();
+26 <emphasis role="keyword">public</emphasis>&#32;slots:
+27 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;slotClientConnected();
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;slotClientDisconnected();
+29 
+30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;slotServerRead();
+31 
+32 
+33 <emphasis role="keyword">private</emphasis>:
+34 &#32;&#32;&#32;&#32;QVector&lt;QTcpSocket*&gt;&#32;multiple_sockets;&#32;&#32;<emphasis role="comment">//&#32;массив&#32;сокетов</emphasis>
+35 &#32;&#32;&#32;&#32;QTcpServer&#32;*&#32;Server;&#32;&#32;<emphasis role="comment">//&#32;сервер</emphasis>
+36 &#32;&#32;&#32;&#32;QTcpSocket&#32;*&#32;Socket;&#32;&#32;<emphasis role="comment">//&#32;сокет</emphasis>
+37 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;server_status;&#32;&#32;<emphasis role="comment">//&#32;статус&#32;сервера</emphasis>
+38 
+39 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;переменные&#32;для&#32;работы&#32;с&#32;чтением&#32;на&#32;сервере</emphasis>
+40 &#32;&#32;&#32;&#32;QByteArray&#32;read_array;&#32;&#32;<emphasis role="comment">//&#32;массив&#32;для&#32;считывания</emphasis>
+41 &#32;&#32;&#32;&#32;QString&#32;result_Server_Read;&#32;&#32;<emphasis role="comment">//&#32;результат&#32;чтения&#32;сервера</emphasis>
+42 };
+43 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;LOGIFIRM_SERVER_H</emphasis>
+44 
+45 
+46 
+47 
+48 
+49 
+50 
+</programlisting></section>

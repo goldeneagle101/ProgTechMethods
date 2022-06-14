@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="_server___functions_8h" kind="file" language="C++">
+    <compoundname>Server_Functions.h</compoundname>
+    <includes local="no">QStringList</includes>
+    <includes local="no">QString</includes>
+    <includedby refid="_logi_firm___server_8cpp" local="yes">LogiFirm_Server.cpp</includedby>
+    <includedby refid="_server___functions_8cpp" local="yes">Server_Functions.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Server_Functions.h</label>
+        <link refid="_server___functions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QString</label>
+      </node>
+      <node id="2">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_server___functions_8h_1a44ce31d04ead3bbb2518a69d33c7b93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray parsing</definition>
+        <argsstring>(QString main_data_from_client)</argsstring>
+        <name>parsing</name>
+        <param>
+          <type>QString</type>
+          <declname>main_data_from_client</declname>
+        </param>
+        <briefdescription>
+<para>parsing функция для реализации парсинга запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="authors"><para>Tatarchuk_Mihail </para>
+</simplesect>
+<simplesect kind="date"><para>28.03.2022 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0</para>
+</simplesect>
+auth функция для авторизации</para>
+<para>reg функция для регистрации</para>
+<para>example просто функция (для проверки работоспособности) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">main_data_from_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строка введенная клиентом </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>логин пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>пароль пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e-mail пользователя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mobilephonenumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>номер телефона пользователя </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.h" line="27" column="12" bodyfile="Server_Functions.cpp" bodystart="4" bodyend="40" declfile="Server_Functions.h" declline="27" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8h_1a8a240dbb1effe803a8c7b95afbede15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray auth</definition>
+        <argsstring>(QString log, QString pass)</argsstring>
+        <name>auth</name>
+        <param>
+          <type>QString</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.h" line="30" column="12" bodyfile="Server_Functions.cpp" bodystart="43" bodyend="47" declfile="Server_Functions.h" declline="30" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8h_1a17f8c8044a3c1d0ffff34a06cfe3b5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray reg</definition>
+        <argsstring>(QString log, QString pass, QString email, QString mobilephonenumber)</argsstring>
+        <name>reg</name>
+        <param>
+          <type>QString</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>mobilephonenumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.h" line="31" column="12" bodyfile="Server_Functions.cpp" bodystart="50" bodyend="56" declfile="Server_Functions.h" declline="31" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_server___functions_8h_1ab76f4b153720f7efe7cf354c5fcf4afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray example</definition>
+        <argsstring>(QString first_param)</argsstring>
+        <name>example</name>
+        <param>
+          <type>QString</type>
+          <declname>first_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server_Functions.h" line="32" column="12" bodyfile="Server_Functions.cpp" bodystart="59" bodyend="62" declfile="Server_Functions.h" declline="32" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVER_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVER_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>???????????<sp/>почему<sp/>не<sp/>работает?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//QStringList<sp/>parsing_data_from_user;<sp/><sp/>//<sp/>контейнер,<sp/>представляющий<sp/>собой<sp/>двухсвязный<sp/>список,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>для<sp/>обработки<sp/>запроса<sp/>пользователя</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//QString<sp/>function_name;<sp/><sp/>//<sp/>имя<sp/>функции,<sp/>полученное<sp/>в<sp/>результате<sp/>parsing()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>?????????????</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>функция<sp/>обработки<sp/>запроса<sp/>сервером</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">QByteArray<sp/>parsing(QString<sp/>main_data_from_client);<sp/><sp/></highlight><highlight class="comment">//<sp/>парсинг<sp/>данных,<sp/>введенных<sp/>пользователем</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>функции<sp/>сервера</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">QByteArray<sp/>auth(QString<sp/>log,<sp/>QString<sp/>pass);<sp/><sp/></highlight><highlight class="comment">//<sp/>функция<sp/>авторизации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">QByteArray<sp/>reg(QString<sp/>log,<sp/>QString<sp/>pass,<sp/>QString<sp/>email,<sp/>QString<sp/>mobilephonenumber);<sp/><sp/></highlight><highlight class="comment">//<sp/>функция<sp/>регистрации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">QByteArray<sp/>example(QString<sp/>first_param);<sp/><sp/></highlight><highlight class="comment">//<sp/>дополнительная<sp/>функция</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SERVER_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Server_Functions.h"/>
+  </compounddef>
+</doxygen>

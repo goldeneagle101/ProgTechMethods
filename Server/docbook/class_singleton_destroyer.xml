@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_singleton_destroyer" xml:lang="ru">
+<title>Класс SingletonDestroyer</title>
+<indexterm><primary>SingletonDestroyer</primary></indexterm>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_singleton_destroyer_1acfec80d25b42012b9772267953448bcd"/>void <emphasis role="strong">initialize</emphasis> (<link linkend="_class_singleton">Singleton</link> *p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+Singleton.h</section>

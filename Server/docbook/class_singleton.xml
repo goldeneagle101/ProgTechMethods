@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_singleton" xml:lang="ru">
+<title>Класс Singleton</title>
+<indexterm><primary>Singleton</primary></indexterm>
+<simplesect>
+    <title>Открытые статические члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_singleton_1aa53fd6700bb7e168772a149715ac2971"/>static <link linkend="_class_singleton">Singleton</link> * <emphasis role="strong">getInstance</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+Singleton.h</section>

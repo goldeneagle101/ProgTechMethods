@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="class_logi_firm_server" kind="class" language="C++" prot="public">
+    <compoundname>LogiFirmServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_logi_firm_server_1ae671c366f52bd24c5d5a07cf5b4e5f3c" prot="private" static="no" mutable="no">
+        <type>QVector&lt; QTcpSocket * &gt;</type>
+        <definition>QVector&lt;QTcpSocket*&gt; LogiFirmServer::multiple_sockets</definition>
+        <argsstring></argsstring>
+        <name>multiple_sockets</name>
+        <qualifiedname>LogiFirmServer::multiple_sockets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="34" column="13" bodyfile="LogiFirm_Server.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logi_firm_server_1af8e270cb4317059b52126efa112c31dc" prot="private" static="no" mutable="no">
+        <type>QTcpServer *</type>
+        <definition>QTcpServer* LogiFirmServer::Server</definition>
+        <argsstring></argsstring>
+        <name>Server</name>
+        <qualifiedname>LogiFirmServer::Server</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="35" column="17" bodyfile="LogiFirm_Server.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logi_firm_server_1a90328c8fdf141bce7e94b63f261940bf" prot="private" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* LogiFirmServer::Socket</definition>
+        <argsstring></argsstring>
+        <name>Socket</name>
+        <qualifiedname>LogiFirmServer::Socket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="36" column="17" bodyfile="LogiFirm_Server.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logi_firm_server_1a5a0f734fb9eabaf24439545568b6e0f8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LogiFirmServer::server_status</definition>
+        <argsstring></argsstring>
+        <name>server_status</name>
+        <qualifiedname>LogiFirmServer::server_status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="37" column="9" bodyfile="LogiFirm_Server.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logi_firm_server_1a5c576a1c555b99323499a2a9d1efbeae" prot="private" static="no" mutable="no">
+        <type>QByteArray</type>
+        <definition>QByteArray LogiFirmServer::read_array</definition>
+        <argsstring></argsstring>
+        <name>read_array</name>
+        <qualifiedname>LogiFirmServer::read_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="40" column="16" bodyfile="LogiFirm_Server.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logi_firm_server_1aa44a19ca04d560de80c8bd6aa0834c47" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString LogiFirmServer::result_Server_Read</definition>
+        <argsstring></argsstring>
+        <name>result_Server_Read</name>
+        <qualifiedname>LogiFirmServer::result_Server_Read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="41" column="13" bodyfile="LogiFirm_Server.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_logi_firm_server_1a4e23b8bde0dcead7c5a4a10d4c04b5a5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LogiFirmServer::LogiFirmServer</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>LogiFirmServer</name>
+        <qualifiedname>LogiFirmServer::LogiFirmServer</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="24" column="14" bodyfile="LogiFirm_Server.cpp" bodystart="14" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logi_firm_server_1a35692908ec928fad18c5b2ad1be3435a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LogiFirmServer::~LogiFirmServer</definition>
+        <argsstring>()</argsstring>
+        <name>~LogiFirmServer</name>
+        <qualifiedname>LogiFirmServer::~LogiFirmServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="25" column="5" bodyfile="LogiFirm_Server.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_logi_firm_server_1ab8cf7dc9fc0bc660cae46aa18fe22dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogiFirmServer::slotClientConnected</definition>
+        <argsstring>()</argsstring>
+        <name>slotClientConnected</name>
+        <qualifiedname>LogiFirmServer::slotClientConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="27" column="10" bodyfile="LogiFirm_Server.cpp" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_logi_firm_server_1a0c4f1d6166a9a156015d671f477d2e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogiFirmServer::slotClientDisconnected</definition>
+        <argsstring>()</argsstring>
+        <name>slotClientDisconnected</name>
+        <qualifiedname>LogiFirmServer::slotClientDisconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="28" column="10" bodyfile="LogiFirm_Server.cpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_logi_firm_server_1abde75e91b502f4dce5ff3c810301c6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogiFirmServer::slotServerRead</definition>
+        <argsstring>()</argsstring>
+        <name>slotServerRead</name>
+        <qualifiedname>LogiFirmServer::slotServerRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LogiFirm_Server.h" line="30" column="10" bodyfile="LogiFirm_Server.cpp" bodystart="43" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>slotClientConnected метод, отвечающий за обработку подключения нового пользователя </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Tatarchuk_Mihail </para>
+</simplesect>
+<simplesect kind="date"><para>28.03.2022 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 за работу сервера фирмы LogiFirm</para>
+</simplesect>
+slotSlientDisconnected метод, отвечающий за обработку отключения нового пользователя</para>
+<para>slotServerRead метод отвечающий за чтение команд из консоли </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LogiFirmServer</label>
+        <link refid="class_logi_firm_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LogiFirmServer</label>
+        <link refid="class_logi_firm_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="LogiFirm_Server.h" line="20" column="1" bodyfile="LogiFirm_Server.h" bodystart="21" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_logi_firm_server_1a4e23b8bde0dcead7c5a4a10d4c04b5a5" prot="public" virt="non-virtual"><scope>LogiFirmServer</scope><name>LogiFirmServer</name></member>
+      <member refid="class_logi_firm_server_1ae671c366f52bd24c5d5a07cf5b4e5f3c" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>multiple_sockets</name></member>
+      <member refid="class_logi_firm_server_1a5c576a1c555b99323499a2a9d1efbeae" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>read_array</name></member>
+      <member refid="class_logi_firm_server_1aa44a19ca04d560de80c8bd6aa0834c47" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>result_Server_Read</name></member>
+      <member refid="class_logi_firm_server_1af8e270cb4317059b52126efa112c31dc" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>Server</name></member>
+      <member refid="class_logi_firm_server_1a5a0f734fb9eabaf24439545568b6e0f8" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>server_status</name></member>
+      <member refid="class_logi_firm_server_1ab8cf7dc9fc0bc660cae46aa18fe22dd2" prot="public" virt="non-virtual"><scope>LogiFirmServer</scope><name>slotClientConnected</name></member>
+      <member refid="class_logi_firm_server_1a0c4f1d6166a9a156015d671f477d2e7a" prot="public" virt="non-virtual"><scope>LogiFirmServer</scope><name>slotClientDisconnected</name></member>
+      <member refid="class_logi_firm_server_1abde75e91b502f4dce5ff3c810301c6d2" prot="public" virt="non-virtual"><scope>LogiFirmServer</scope><name>slotServerRead</name></member>
+      <member refid="class_logi_firm_server_1a90328c8fdf141bce7e94b63f261940bf" prot="private" virt="non-virtual"><scope>LogiFirmServer</scope><name>Socket</name></member>
+      <member refid="class_logi_firm_server_1a35692908ec928fad18c5b2ad1be3435a" prot="public" virt="non-virtual"><scope>LogiFirmServer</scope><name>~LogiFirmServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

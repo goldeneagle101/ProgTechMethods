@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="class_singleton_destroyer" kind="class" language="C++" prot="public">
+    <compoundname>SingletonDestroyer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_singleton_destroyer_1abc7a7204abf64b7bba0b90467b7c237d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> *</type>
+        <definition>Singleton* SingletonDestroyer::p_instance</definition>
+        <argsstring></argsstring>
+        <name>p_instance</name>
+        <qualifiedname>SingletonDestroyer::p_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="29" column="12" bodyfile="Singleton.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_singleton_destroyer_1a8ac3166871f4c5411edfdb13594dee15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SingletonDestroyer::~SingletonDestroyer</definition>
+        <argsstring>()</argsstring>
+        <name>~SingletonDestroyer</name>
+        <qualifiedname>SingletonDestroyer::~SingletonDestroyer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="31" column="1" bodyfile="Singleton.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_destroyer_1acfec80d25b42012b9772267953448bcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingletonDestroyer::initialize</definition>
+        <argsstring>(Singleton *p)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>SingletonDestroyer::initialize</qualifiedname>
+        <param>
+          <type><ref refid="class_singleton" kindref="compound">Singleton</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="32" column="6" bodyfile="Singleton.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Singleton.h" line="26" column="1" bodyfile="Singleton.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_singleton_destroyer_1acfec80d25b42012b9772267953448bcd" prot="public" virt="non-virtual"><scope>SingletonDestroyer</scope><name>initialize</name></member>
+      <member refid="class_singleton_destroyer_1abc7a7204abf64b7bba0b90467b7c237d" prot="private" virt="non-virtual"><scope>SingletonDestroyer</scope><name>p_instance</name></member>
+      <member refid="class_singleton_destroyer_1a8ac3166871f4c5411edfdb13594dee15" prot="public" virt="non-virtual"><scope>SingletonDestroyer</scope><name>~SingletonDestroyer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+\hypertarget{_singleton_8h_source}{}\doxysection{Singleton.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//классическая реализация}}
+\DoxyCodeLine{2 \textcolor{keyword}{class }\mbox{\hyperlink{class_singleton}{Singleton}}}
+\DoxyCodeLine{3 \{}
+\DoxyCodeLine{4     \textcolor{keyword}{private}:}
+\DoxyCodeLine{5         \textcolor{keyword}{static} \mbox{\hyperlink{class_singleton}{Singleton}} * p\_instance;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7         \mbox{\hyperlink{class_singleton}{Singleton}}()\{\}}
+\DoxyCodeLine{8         \mbox{\hyperlink{class_singleton}{Singleton}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_singleton}{Singleton}}\& );}
+\DoxyCodeLine{9         \mbox{\hyperlink{class_singleton}{Singleton}}\& operator = (\mbox{\hyperlink{class_singleton}{Singleton}} \&);}
+\DoxyCodeLine{10     \textcolor{keyword}{public}:}
+\DoxyCodeLine{11         \textcolor{keyword}{static} \mbox{\hyperlink{class_singleton}{Singleton}}* getInstance()\{}
+\DoxyCodeLine{12             \textcolor{keywordflow}{if} (!p\_instance)}
+\DoxyCodeLine{13                 p\_instance = \textcolor{keyword}{new} \mbox{\hyperlink{class_singleton}{Singleton}}();}
+\DoxyCodeLine{14             \textcolor{keywordflow}{return} p\_instance;}
+\DoxyCodeLine{15         \}}
+\DoxyCodeLine{16 \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 Singleton::getInstance();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{delete} Singleton::getInstance(); \textcolor{comment}{//удаление6 памяти на том, кто использует класс, а не автоматически в классе!!!!}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{comment}{//Улучшенная реализация}}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_singleton}{Singleton}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{class }\mbox{\hyperlink{class_singleton_destroyer}{SingletonDestroyer}}}
+\DoxyCodeLine{27 \{}
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_singleton}{Singleton}} * p\_instance;}
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_singleton_destroyer}{\string~SingletonDestroyer}}() \{ \textcolor{keyword}{delete} p\_instance;\}}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} initialize(\mbox{\hyperlink{class_singleton}{Singleton}} * p)\{p\_instance = p\};}
+\DoxyCodeLine{33 \}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{class_singleton}{Singleton}}}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     \textcolor{keyword}{private}:}
+\DoxyCodeLine{39         \textcolor{keyword}{static} \mbox{\hyperlink{class_singleton}{Singleton}} * p\_instance;}
+\DoxyCodeLine{40         \textcolor{keyword}{static} \mbox{\hyperlink{class_singleton_destroyer}{SingletonDestroyer}} destroyer;}
+\DoxyCodeLine{41     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_singleton}{Singleton}}()\{\}}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_singleton}{Singleton}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_singleton}{Singleton}}\& );}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_singleton}{Singleton}}\& operator = (\mbox{\hyperlink{class_singleton}{Singleton}} \&);}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_singleton}{\string~Singleton}}() \{\}}
+\DoxyCodeLine{46         \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_singleton_destroyer}{SingletonDestroyer}};}
+\DoxyCodeLine{47     \textcolor{keyword}{public}:}
+\DoxyCodeLine{48         \textcolor{keyword}{static} \mbox{\hyperlink{class_singleton}{Singleton}}* getInstance()\{}
+\DoxyCodeLine{49             \textcolor{keywordflow}{if} (!p\_instance)}
+\DoxyCodeLine{50             \{}
+\DoxyCodeLine{51                 p\_instance = \textcolor{keyword}{new} \mbox{\hyperlink{class_singleton}{Singleton}}();}
+\DoxyCodeLine{52                 destroyer.initialize(p\_instance);}
+\DoxyCodeLine{53             \}}
+\DoxyCodeLine{54             \textcolor{keywordflow}{return} p\_instance;}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}

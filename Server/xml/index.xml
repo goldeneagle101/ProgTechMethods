@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="ru">
+  <compound refid="class_logi_firm_server" kind="class"><name>LogiFirmServer</name>
+    <member refid="class_logi_firm_server_1ae671c366f52bd24c5d5a07cf5b4e5f3c" kind="variable"><name>multiple_sockets</name></member>
+    <member refid="class_logi_firm_server_1af8e270cb4317059b52126efa112c31dc" kind="variable"><name>Server</name></member>
+    <member refid="class_logi_firm_server_1a90328c8fdf141bce7e94b63f261940bf" kind="variable"><name>Socket</name></member>
+    <member refid="class_logi_firm_server_1a5a0f734fb9eabaf24439545568b6e0f8" kind="variable"><name>server_status</name></member>
+    <member refid="class_logi_firm_server_1a5c576a1c555b99323499a2a9d1efbeae" kind="variable"><name>read_array</name></member>
+    <member refid="class_logi_firm_server_1aa44a19ca04d560de80c8bd6aa0834c47" kind="variable"><name>result_Server_Read</name></member>
+    <member refid="class_logi_firm_server_1a4e23b8bde0dcead7c5a4a10d4c04b5a5" kind="function"><name>LogiFirmServer</name></member>
+    <member refid="class_logi_firm_server_1a35692908ec928fad18c5b2ad1be3435a" kind="function"><name>~LogiFirmServer</name></member>
+    <member refid="class_logi_firm_server_1ab8cf7dc9fc0bc660cae46aa18fe22dd2" kind="slot"><name>slotClientConnected</name></member>
+    <member refid="class_logi_firm_server_1a0c4f1d6166a9a156015d671f477d2e7a" kind="slot"><name>slotClientDisconnected</name></member>
+    <member refid="class_logi_firm_server_1abde75e91b502f4dce5ff3c810301c6d2" kind="slot"><name>slotServerRead</name></member>
+  </compound>
+  <compound refid="class_singleton" kind="class"><name>Singleton</name>
+    <member refid="class_singleton_1adb583ddadc0f4fdff383adeb44fce23c" kind="variable"><name>p_instance</name></member>
+    <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" kind="function"><name>Singleton</name></member>
+    <member refid="class_singleton_1a2d5e43782d65593bf316ff9a5cd58de4" kind="function"><name>Singleton</name></member>
+    <member refid="class_singleton_1a201725b3b777ce535eeb97f1523f8115" kind="function"><name>operator=</name></member>
+    <member refid="class_singleton_1aa53fd6700bb7e168772a149715ac2971" kind="function"><name>getInstance</name></member>
+  </compound>
+  <compound refid="class_singleton_destroyer" kind="class"><name>SingletonDestroyer</name>
+    <member refid="class_singleton_destroyer_1abc7a7204abf64b7bba0b90467b7c237d" kind="variable"><name>p_instance</name></member>
+    <member refid="class_singleton_destroyer_1a8ac3166871f4c5411edfdb13594dee15" kind="function"><name>~SingletonDestroyer</name></member>
+    <member refid="class_singleton_destroyer_1acfec80d25b42012b9772267953448bcd" kind="function"><name>initialize</name></member>
+  </compound>
+  <compound refid="_logi_firm___server_8cpp" kind="file"><name>LogiFirm_Server.cpp</name>
+  </compound>
+  <compound refid="_logi_firm___server_8h" kind="file"><name>LogiFirm_Server.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_server___functions_8cpp" kind="file"><name>Server_Functions.cpp</name>
+    <member refid="_server___functions_8cpp_1a44ce31d04ead3bbb2518a69d33c7b93d" kind="function"><name>parsing</name></member>
+    <member refid="_server___functions_8cpp_1a8a240dbb1effe803a8c7b95afbede15e" kind="function"><name>auth</name></member>
+    <member refid="_server___functions_8cpp_1a17f8c8044a3c1d0ffff34a06cfe3b5da" kind="function"><name>reg</name></member>
+    <member refid="_server___functions_8cpp_1ab76f4b153720f7efe7cf354c5fcf4afa" kind="function"><name>example</name></member>
+  </compound>
+  <compound refid="_server___functions_8h" kind="file"><name>Server_Functions.h</name>
+    <member refid="_server___functions_8h_1a44ce31d04ead3bbb2518a69d33c7b93d" kind="function"><name>parsing</name></member>
+    <member refid="_server___functions_8h_1a8a240dbb1effe803a8c7b95afbede15e" kind="function"><name>auth</name></member>
+    <member refid="_server___functions_8h_1a17f8c8044a3c1d0ffff34a06cfe3b5da" kind="function"><name>reg</name></member>
+    <member refid="_server___functions_8h_1ab76f4b153720f7efe7cf354c5fcf4afa" kind="function"><name>example</name></member>
+  </compound>
+  <compound refid="_singleton_8h" kind="file"><name>Singleton.h</name>
+    <member refid="_singleton_8h_1a86a377a1fe7a83317eae22c87cf30c06" kind="variable"><name>p_instance</name></member>
+    <member refid="_singleton_8h_1aab538fc6eb6be7d07f1e88ad5eff8b58" kind="variable"><name>destroyer</name></member>
+    <member refid="_singleton_8h_1ab9f906a1f1d4d594c65d151c62eeebee" kind="function"><name>getInstance</name></member>
+    <member refid="_singleton_8h_1a04783ca27b0280a844368faf849c8ddb" kind="function"><name>Singleton</name></member>
+    <member refid="_singleton_8h_1adb3159c1bd7a1e79a375d7fad46ef47f" kind="function"><name>Singleton</name></member>
+    <member refid="_singleton_8h_1ae1b184c9bc60fdb83f300e27cb88ba5f" kind="function"><name>operator=</name></member>
+    <member refid="_singleton_8h_1a4e1752d4a52503026de0ee1541325127" kind="function"><name>~Singleton</name></member>
+  </compound>
+</doxygenindex>

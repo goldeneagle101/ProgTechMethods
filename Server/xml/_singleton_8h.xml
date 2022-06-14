@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="ru">
+  <compounddef id="_singleton_8h" kind="file" language="C++">
+    <compoundname>Singleton.h</compoundname>
+    <innerclass refid="class_singleton" prot="public">Singleton</innerclass>
+    <innerclass refid="class_singleton_destroyer" prot="public">SingletonDestroyer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_singleton_8h_1a86a377a1fe7a83317eae22c87cf30c06" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> *</type>
+        <definition>class SingletonDestroyer * p_instance</definition>
+        <argsstring></argsstring>
+        <name>p_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="1" column="19" bodyfile="Singleton.h" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_singleton_8h_1aab538fc6eb6be7d07f1e88ad5eff8b58" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_singleton_destroyer" kindref="compound">SingletonDestroyer</ref></type>
+        <definition>SingletonDestroyer destroyer</definition>
+        <argsstring></argsstring>
+        <name>destroyer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="40" column="27" bodyfile="Singleton.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_singleton_8h_1ab9f906a1f1d4d594c65d151c62eeebee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class <ref refid="class_singleton" kindref="compound">Singleton</ref></type>
+        <definition>static Singleton * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="7" column="18" bodyfile="Singleton.h" bodystart="7" bodyend="11" declfile="Singleton.h" declline="1" declcolumn="0"/>
+      </memberdef>
+      <memberdef kind="function" id="_singleton_8h_1a04783ca27b0280a844368faf849c8ddb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>Singleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="3" column="1" bodyfile="Singleton.h" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="_singleton_8h_1adb3159c1bd7a1e79a375d7fad46ef47f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Singleton</definition>
+        <argsstring>(const Singleton &amp;)</argsstring>
+        <name>Singleton</name>
+        <param>
+          <type>const <ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="4" column="1" declfile="Singleton.h" declline="4" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_singleton_8h_1ae1b184c9bc60fdb83f300e27cb88ba5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        <definition>Singleton &amp; operator=</definition>
+        <argsstring>(Singleton &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="5" column="11" declfile="Singleton.h" declline="5" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="_singleton_8h_1a4e1752d4a52503026de0ee1541325127" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>~Singleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Singleton.h" line="45" column="1" bodyfile="Singleton.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//классическая<sp/>реализация</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="class_singleton" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_singleton" kindref="compound">Singleton</ref></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>*<sp/>p_instance;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>(){}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>&amp;<sp/>operator<sp/>=<sp/>(<ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>*<sp/>getInstance(){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!p_instance)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_instance<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_instance;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">Singleton::getInstance();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Singleton::getInstance();<sp/></highlight><highlight class="comment">//удаление6<sp/>памяти<sp/>на<sp/>том,<sp/>кто<sp/>использует<sp/>класс,<sp/>а<sp/>не<sp/>автоматически<sp/>в<sp/>классе!!!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//Улучшенная<sp/>реализация</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_singleton" kindref="compound">Singleton</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_singleton_destroyer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_singleton_destroyer" kindref="compound">SingletonDestroyer</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>*<sp/>p_instance;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton_destroyer" kindref="compound">~SingletonDestroyer</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>p_instance;}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize(<ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>*<sp/>p){p_instance<sp/>=<sp/>p};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_singleton" kindref="compound">Singleton</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>*<sp/>p_instance;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_singleton_destroyer" kindref="compound">SingletonDestroyer</ref><sp/>destroyer;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>(){}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>&amp;<sp/>operator<sp/>=<sp/>(<ref refid="class_singleton" kindref="compound">Singleton</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_singleton" kindref="compound">~Singleton</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_singleton_destroyer" kindref="compound">SingletonDestroyer</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>*<sp/>getInstance(){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!p_instance)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_instance<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_singleton" kindref="compound">Singleton</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destroyer.initialize(p_instance);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_instance;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Singleton.h"/>
+  </compounddef>
+</doxygen>
