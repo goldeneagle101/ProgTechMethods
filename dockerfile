@@ -13,9 +13,9 @@ RUN apt-get install build-essential -y
 WORKDIR /root/
 RUN mkdir server
 WORKDIR /root/server/
-COPY *.cpp /root/server/
-COPY *.h /root/server/
-COPY *.pro /root/server/
+COPY Server/*.cpp /root/server/
+COPY Server/*.h /root/server/
+COPY Server/*.pro /root/server/
  
 
 RUN qmake echoServer.pro
